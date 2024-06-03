@@ -1,0 +1,177 @@
+@import url(../Assets_CSS/chillax.css);
+
+/* Variables */
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light:#6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body:#727272;
+    --font-base: "ChillaxDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+/* Reset and Helper */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1, .h2, .h3, .h4, h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow)
+}
+
+.firtsname{
+    color:rgb(0, 81, 255);
+    font-weight:700;
+}
+
+.lastname{
+    padding-left:4px;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-brand-rgb);
+    text-transform: capitalize;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+/* BTN */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 24px;
+}
+
+
+.btn-brand {
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(13, 136, 185));
+    border-color: rgb(255, 255, 255);
+    color:rgb(92, 92, 92);
+}
+
+.btn-brand:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+/* Hero */
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Section Title */
+
+.section-title{
+    margin-bottom: 40px;
+}
+
+.section-title .line{
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    margin: 16px auto 24px auto;
+}
+
+/* iconbox */
+.iconbox {
+    width:70px;
+    height:70px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    background:rgb(var(--c-brand-rgb), 0.2);
+    color:var(--c-brand);
+    font-size:34px;
+    flex:none;
+}
+    /* Service */ 
+    .service {
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+    }
+    
+    .service::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: rgb(1, 68, 99);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: var(--transition);
+    }
+    
+    .service:hover::after {
+        width: 100%;
+        height: 100%;
+        background: rgb(29, 86, 190);
+        z-index: -1;
+    }
+    
+    .service:hover h5,
+    .service:hover p {
+        color: rgb(2, 1, 1);
+    }
+    
+    .service:hover .iconbox {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: rgb(0, 0, 0);
+    }
+
+/* counter */
+    
