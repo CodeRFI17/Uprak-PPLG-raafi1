@@ -193,15 +193,34 @@ img {
 
 /* counter */
 #counter {
-    background: url(/Assets/images/Projector.jpg);  
-    background-position:center;
-    background-size:cover;
-    opacity:80%;
+    background: linear-gradient(
+        rgba(var(--c-brand-rgb), 0.8), 
+        rgba(var(--c-brand-rgb), 0.8)
+    ),
+    url(../images/Projector.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.portofolio-item .iconbox {
+    background-color:rgb(249, 254, 255);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.portofolio-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
 }
 
 /* portofolio */
 .portofolio-item .iconbox {
-    background-color: var(--c-brand-rgb);
+    background-color:rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     position: absolute;
     top:40%;
