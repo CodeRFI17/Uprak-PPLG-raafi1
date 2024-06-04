@@ -65,16 +65,16 @@ img {
 
 /* NAVBAR */
 .navbar {
-    box-shadow: var(--box-shadow)
+    box-shadow: var(--box-shadow);
 }
 
-.firtsname{
-    color:rgb(0, 81, 255);
-    font-weight:700;
+.firstname {
+    color: rgb(0, 81, 255);
+    font-weight: 700;
 }
 
-.lastname{
-    padding-left:4px;
+.lastname {
+    padding-left: 4px;
     font-weight: 400;
 }
 
@@ -87,7 +87,6 @@ img {
 .navbar-nav .nav-link.active {
     color: var(--c-brand);
 }
-
 /* BTN */
 .btn {
     font-weight: 600;
