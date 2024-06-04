@@ -217,8 +217,8 @@ img {
 
 /* portofolio */
 .portofolio-item .iconbox {
-    background-color:rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    background-color:rgb(8, 8, 8);
+    color: rgb(0, 0, 0);
     position: absolute;
     top:40%;
     left:50%;
